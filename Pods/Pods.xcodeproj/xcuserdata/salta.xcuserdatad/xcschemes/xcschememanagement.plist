@@ -4,25 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SelfControl2.xcscheme</key>
+		<key>Cartography.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>blocker.xcscheme</key>
+		<key>Pods-SelfControl2.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B720DB6F1DB52831004A2D03</key>
+		<key>10E480F7956C7E71D6F817DEBB58B55B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B720DB8B1DB5386A004A2D03</key>
+		<key>3BD917D51ED4F8D363EEBEFB39880FB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA71D51147B8A72A588BFCC03DB91086</key>
 		<dict>
 			<key>primary</key>
 			<true/>

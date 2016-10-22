@@ -7,15 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9526C209DBCD03211651CB06 /* Pods_SelfControl2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8ACB9AAB0FCDB3381DC3B3C /* Pods_SelfControl2.framework */; };
 		B720DB741DB52831004A2D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720DB731DB52831004A2D03 /* AppDelegate.swift */; };
 		B720DB761DB52831004A2D03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720DB751DB52831004A2D03 /* ViewController.swift */; };
 		B720DB791DB52831004A2D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B720DB771DB52831004A2D03 /* Main.storyboard */; };
 		B720DB7C1DB52831004A2D03 /* SelfControl2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B720DB7A1DB52831004A2D03 /* SelfControl2.xcdatamodeld */; };
 		B720DB7E1DB52831004A2D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B720DB7D1DB52831004A2D03 /* Assets.xcassets */; };
 		B720DB811DB52831004A2D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B720DB7F1DB52831004A2D03 /* LaunchScreen.storyboard */; };
+		B720DB911DB5386A004A2D03 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720DB901DB5386A004A2D03 /* ContentBlockerRequestHandler.swift */; };
+		B720DB951DB5386A004A2D03 /* blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B720DB8C1DB5386A004A2D03 /* blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B720DB9C1DB53B73004A2D03 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = B720DB8E1DB5386A004A2D03 /* blockerList.json */; };
+		B7FA508D1DB889C00064F594 /* blockerList.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = B720DB8E1DB5386A004A2D03 /* blockerList.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B720DB931DB5386A004A2D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B720DB681DB52831004A2D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B720DB8B1DB5386A004A2D03;
+			remoteInfo = blocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B720DB991DB5386A004A2D03 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B720DB951DB5386A004A2D03 /* blocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FA508B1DB889910064F594 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B7FA508D1DB889C00064F594 /* blockerList.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FA508C1DB889980064F594 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		61F514F62411DDB68766B6A2 /* Pods-SelfControl2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfControl2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelfControl2/Pods-SelfControl2.release.xcconfig"; sourceTree = "<group>"; };
 		B720DB701DB52831004A2D03 /* SelfControl2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfControl2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B720DB731DB52831004A2D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B720DB751DB52831004A2D03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +73,24 @@
 		B720DB7D1DB52831004A2D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B720DB801DB52831004A2D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B720DB821DB52831004A2D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B720DB8C1DB5386A004A2D03 /* blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = blocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B720DB8E1DB5386A004A2D03 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		B720DB901DB5386A004A2D03 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		B720DB921DB5386A004A2D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA77F6539E1347F097E290F5 /* Pods-SelfControl2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfControl2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelfControl2/Pods-SelfControl2.debug.xcconfig"; sourceTree = "<group>"; };
+		C8ACB9AAB0FCDB3381DC3B3C /* Pods_SelfControl2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfControl2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B720DB6D1DB52831004A2D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9526C209DBCD03211651CB06 /* Pods_SelfControl2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B720DB891DB5386A004A2D03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,11 +100,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045FB10BD50E8413009DE882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8ACB9AAB0FCDB3381DC3B3C /* Pods_SelfControl2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528A2416A295FCC6837A9E72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA77F6539E1347F097E290F5 /* Pods-SelfControl2.debug.xcconfig */,
+				61F514F62411DDB68766B6A2 /* Pods-SelfControl2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B720DB671DB52831004A2D03 = {
 			isa = PBXGroup;
 			children = (
-				B720DB721DB52831004A2D03 /* SelfControl2 */,
+				B720DB8D1DB5386A004A2D03 /* blocker */,
 				B720DB711DB52831004A2D03 /* Products */,
+				528A2416A295FCC6837A9E72 /* Pods */,
+				045FB10BD50E8413009DE882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B720DB701DB52831004A2D03 /* SelfControl2.app */,
+				B720DB8C1DB5386A004A2D03 /* blocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +147,19 @@
 				B720DB821DB52831004A2D03 /* Info.plist */,
 				B720DB7A1DB52831004A2D03 /* SelfControl2.xcdatamodeld */,
 			);
-			path = SelfControl2;
+			name = SelfControl2;
+			path = ../SelfControl2;
+			sourceTree = "<group>";
+		};
+		B720DB8D1DB5386A004A2D03 /* blocker */ = {
+			isa = PBXGroup;
+			children = (
+				B720DB721DB52831004A2D03 /* SelfControl2 */,
+				B720DB8E1DB5386A004A2D03 /* blockerList.json */,
+				B720DB901DB5386A004A2D03 /* ContentBlockerRequestHandler.swift */,
+				B720DB921DB5386A004A2D03 /* Info.plist */,
+			);
+			path = blocker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +169,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B720DB851DB52831004A2D03 /* Build configuration list for PBXNativeTarget "SelfControl2" */;
 			buildPhases = (
+				43CEEF2CB731EBD3F446D8B4 /* [CP] Check Pods Manifest.lock */,
 				B720DB6C1DB52831004A2D03 /* Sources */,
 				B720DB6D1DB52831004A2D03 /* Frameworks */,
 				B720DB6E1DB52831004A2D03 /* Resources */,
+				122D79027423B372708D0ADF /* [CP] Embed Pods Frameworks */,
+				0BD7530547918FA63EE3F46D /* [CP] Copy Pods Resources */,
+				B720DB991DB5386A004A2D03 /* Embed App Extensions */,
+				B7FA508B1DB889910064F594 /* CopyFiles */,
+				B7FA508C1DB889980064F594 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B720DB941DB5386A004A2D03 /* PBXTargetDependency */,
 			);
 			name = SelfControl2;
 			productName = SelfControl2;
 			productReference = B720DB701DB52831004A2D03 /* SelfControl2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B720DB8B1DB5386A004A2D03 /* blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B720DB981DB5386A004A2D03 /* Build configuration list for PBXNativeTarget "blocker" */;
+			buildPhases = (
+				B720DB881DB5386A004A2D03 /* Sources */,
+				B720DB891DB5386A004A2D03 /* Frameworks */,
+				B720DB8A1DB5386A004A2D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blocker;
+			productName = blocker;
+			productReference = B720DB8C1DB5386A004A2D03 /* blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +218,12 @@
 				TargetAttributes = {
 					B720DB6F1DB52831004A2D03 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 546WXG898K;
+						ProvisioningStyle = Automatic;
+					};
+					B720DB8B1DB5386A004A2D03 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 546WXG898K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -117,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				B720DB6F1DB52831004A2D03 /* SelfControl2 */,
+				B720DB8B1DB5386A004A2D03 /* blocker */,
 			);
 		};
 /* End PBXProject section */
@@ -132,7 +258,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B720DB8A1DB5386A004A2D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B720DB9C1DB53B73004A2D03 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD7530547918FA63EE3F46D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SelfControl2/Pods-SelfControl2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		122D79027423B372708D0ADF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SelfControl2/Pods-SelfControl2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43CEEF2CB731EBD3F446D8B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B720DB6C1DB52831004A2D03 /* Sources */ = {
@@ -145,7 +327,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B720DB881DB5386A004A2D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B720DB911DB5386A004A2D03 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B720DB941DB5386A004A2D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B720DB8B1DB5386A004A2D03 /* blocker */;
+			targetProxy = B720DB931DB5386A004A2D03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B720DB771DB52831004A2D03 /* Main.storyboard */ = {
@@ -262,8 +460,11 @@
 		};
 		B720DB861DB52831004A2D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA77F6539E1347F097E290F5 /* Pods-SelfControl2.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 546WXG898K;
 				INFOPLIST_FILE = SelfControl2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saltaim.SelfControl2;
@@ -274,12 +475,43 @@
 		};
 		B720DB871DB52831004A2D03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F514F62411DDB68766B6A2 /* Pods-SelfControl2.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 546WXG898K;
 				INFOPLIST_FILE = SelfControl2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saltaim.SelfControl2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B720DB961DB5386A004A2D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEVELOPMENT_TEAM = 546WXG898K;
+				INFOPLIST_FILE = blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saltaim.SelfControl2.blocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B720DB971DB5386A004A2D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEVELOPMENT_TEAM = 546WXG898K;
+				INFOPLIST_FILE = blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saltaim.SelfControl2.blocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +535,16 @@
 				B720DB871DB52831004A2D03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B720DB981DB5386A004A2D03 /* Build configuration list for PBXNativeTarget "blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B720DB961DB5386A004A2D03 /* Debug */,
+				B720DB971DB5386A004A2D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
